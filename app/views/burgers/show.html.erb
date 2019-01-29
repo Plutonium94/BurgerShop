@@ -1,0 +1,7 @@
+<article>
+	<h3><%= @burger.name %></h3>
+	<em><%= @burger.price %> €</em>
+	<p><%= @burger.description %></p>
+
+	<%= button_to(name="Delete this burger", options={:controller => :burgers, :action=>:destroy, :id=>@burger.id}, html_options={:method=>:delete}) %>
+</article>

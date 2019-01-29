@@ -1,0 +1,3 @@
+<p><%= @drink.name %> <strong><%= @drink.quantity %><%= @drink.unit %></strong> : <%= @drink.price %></p>
+
+<%= button_to("Delete this drink !", options= {:controller=>:drinks, :action=>:destroy, :id=>@drink.id}, html_options= {:method=>:delete}) %>

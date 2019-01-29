@@ -1,0 +1,5 @@
+<h1><%= @fry.name %></h1>
+
+<p><%= @fry.name %> <%= @fry.size %> <%= @fry.price %></p>
+
+<%= button_to(name="Delete this fry",options={:controller=>:fries,:action=>:destroy, :id=>@fry.id}, html_options={:method=>:delete}) %>

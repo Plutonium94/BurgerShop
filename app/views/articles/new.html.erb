@@ -1,0 +1,10 @@
+<%= form_with scope: :article, local: true do |form| %>
+
+	<%= form.text_field :name,  placeholder: "Name", required: true %>
+
+	<%= form.number_field :price, placeholder: "price in $", required: true %>
+
+	<%= form.submit %>
+
+
+<% end %>

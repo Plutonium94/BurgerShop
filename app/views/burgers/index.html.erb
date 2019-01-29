@@ -1,0 +1,8 @@
+<h1>Burger List</h1>
+
+
+<uL>
+	<% @burgers.each do |b| %>
+		<li><%= link_to(b.name, burger_path(b)) %> <%= b.type %></li>
+	<% end %>
+</uL>

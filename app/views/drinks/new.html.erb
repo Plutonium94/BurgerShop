@@ -1,0 +1,19 @@
+<%= form_with scope: :drink, local: true, url: drinks_path do |f| %>
+
+	<%= f.text_field :name, :placeholder=> :name , required: true %>
+
+	<br>
+
+	<%= f.number_field :quantity, :placeholder=> :quantity, required: true, step: 0.5, min: 0 %>
+
+	<%= f.text_field :unit, :placeholder=> :cl, required: true %> 
+
+	<br>
+
+	<%= f.number_field :price, :placeholder => :price, required: true %> $
+
+	<br>
+
+	<%= f.submit %>
+
+<% end %> 

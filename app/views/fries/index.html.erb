@@ -1,0 +1,7 @@
+<h2>Fries</h2>
+
+<ul>
+	<% @fries.each do |f| %>
+		<li><%= link_to(f.name, fry_path(f)) %> <%= f.size %> <%= f.price %></li>
+	<% end %>
+</ul>

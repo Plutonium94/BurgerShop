@@ -1,0 +1,11 @@
+<%= form_with scope: :fry, url: fries_path, local: true do |form| %>
+
+	<%= form.text_field :name, placeholder: "Name", required: true %>
+
+	<%= form.number_field :price, placeholder: "Price", required: true %>
+
+	<%= form.select :size, :collection => Fry.sizes.map { |key, value| [key.humanize, key] } %>
+
+	<%= form.submit %>
+
+<% end %>

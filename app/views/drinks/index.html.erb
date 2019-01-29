@@ -1,0 +1,3 @@
+<% @drinks.each do |d| %>
+	<p><%= link_to(d.name, options={:id=>d.id,:action=>:show}) %> <%= d.quantity %><%= d.unit %></p>
+<% end %>

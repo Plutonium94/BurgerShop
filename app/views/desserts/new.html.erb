@@ -1,0 +1,9 @@
+<%= form_with scope: @dessert,url: desserts_path, local: true do |form| %>
+
+	<%= form.text_field :name, placeholder: "Name", required: true %>
+
+	<%= form.number_field :price, :step=>0.01, :min=>0, required: true %>
+
+	<%= form.submit %>
+
+<% end %>
